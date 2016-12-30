@@ -22,6 +22,7 @@
     "gulp-extname": "^0.2.0",
     "gulp-if": "^2.0.0",
     "gulp-imagemin": "^2.2.1",
+    "gulp-jspm": "^0.5.13",
     "gulp-load-plugins": "^1.1.0",
     "gulp-sass": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
@@ -33,16 +34,22 @@
     "style-sherpa": "^1.0.0",
     "yargs": "^3.8.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zurb/foundation-zurb-template.git"
-  },
-  "bugs": {
-    "url": "https://github.com/zurb/foundation-sites/issues",
-    "email": "foundation@zurb.com"
-  },
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
   },
-  "private": true
+  "private": true,
+  "jspm": {
+    "dependencies": {
+      "foundation": "npm:foundation-sites@^6.3.0",
+      "jquery": "npm:jquery@2.2.4",
+      "motion-ui": "npm:motion-ui@^1.2.2"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
 }
